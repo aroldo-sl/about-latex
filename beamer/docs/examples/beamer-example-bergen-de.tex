@@ -1,0 +1,70 @@
+%%%========================== %%%
+%%%  Beamer als Klasse festlegen       
+%%%==========================%%%
+%%
+%% Example found in idienstler.de
+%% Modifide by aroldo.
+%% Beamer
+\documentclass{beamer}
+ 
+%%%========================== %%%
+%%%  Theme festlegen       
+%%%==========================%%%
+%%
+%% Warsaw
+\usetheme{Bergen}
+%% For the Bergen theme:
+\renewcommand*{\inserttitleindicator}{}
+\renewcommand*{\insertauthorindicator}{Wer?}
+\renewcommand*{\insertinstituteindicator}{Von?}
+\renewcommand*{\insertdateindicator}{Wann?}
+ 
+%%%========================== %%%
+%%%  Deutsche Umlaute                           
+%%%==========================%%%
+%%
+%% Für Mac OS X
+%% \usepackage[applemac]{inputenc}
+%% Für PC Windows
+%% \usepackage[ansinew]{inputenc}
+%%
+%% Für PC Linux
+%% \usepackage[latin1]{inputenc}
+%%
+%% Für UTF-8
+\usepackage[utf8]{inputenc}
+ 
+%%%========================== %%%
+%%%  Deutsche Silbentrennung             
+%%%==========================%%%
+%%
+\usepackage{ngerman}
+ 
+%%%========================== %%%
+%%%  Anführungsstriche
+%%%  \enquote{}      
+%%%==========================%%%
+%%
+\usepackage[babel,german=quotes]{csquotes}
+ 
+%%%========================== %%%
+%%%  Einstellungen zur Startseite             
+%%%==========================%%%
+%%
+\title{Vorlage für eine \LaTeX{} Präsentation mit der Beamer Klasse}
+\author{\texorpdfstring{\ Jürgen Scholz \ \newline\url{j.scholz@idienstler.de}}{Author}}
+\institute{iDienstler.de $-$ simply make apps and love the\enquote{i}}
+\date{\today}
+ 
+%%%========================== %%%
+%%%  Dokument Start                               
+%%%==========================%%%
+%%
+\begin{document}
+ 
+\frame{\titlepage}
+ 
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%
+%%%  Dokument Ende                          
+%%%%%%%%%%%%%%%%%%%%%%

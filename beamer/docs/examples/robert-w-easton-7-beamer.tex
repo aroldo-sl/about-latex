@@ -1,0 +1,149 @@
+\documentclass{beamer}
+
+\usetheme{Berlin}
+
+\usepackage{hyperref}
+
+\title[$\sqrt{2}$ is Irrational]{$\sqrt{2}$ is Irrational\\{\small A Sample \texttt{BEAMER} Presentation}}
+\author{Math 351, Winter 2013}
+\date{February 26, 2013}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\frame{
+	\titlepage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Here we have separated frames by a row of %s and sections by two rows of %s, but you can certainly choose your own internal formatting!
+
+\section*{Outline}
+
+\frame{
+	\tableofcontents[pausesections]
+	
+% The argument is causing the table of contents to appear one section at a time, with pauses between the sections.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+\frame{
+	\frametitle{Preview}
+	In this talk, we will prove one of the great theorems in all of mathematics.  \\[.5in]
+	\pause
+	Along the way we will collect some necessary definitions.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+	\frametitle{Some history}
+	\begin{itemize}[<+->]
+	\item The main result of this talk has been known for at least two thousand years.  
+	\item It profoundly changed the Greek view of the universe.
+	\item Legend has it that Hippasus of Metapontum was drowned for his belief in it.\footnote<.->{Morris Kline, {\itshape Mathematical Thought from Ancient to Modern Times}, Oxford University Press, 1990, pg. 32}
+	\end{itemize}
+	
+% Notice how this itemize is working. The argument <+-> is indicating that each item should first appear on the slide given by its internal item number (that's the +) and should remain shown until the end of the frame (that's the -). In general, the argument <m-n> instructs LaTeX to begin showing the indicated output on slides m through n of the given frame.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Rational Numbers}
+
+\frame{
+	\frametitle{Definition}
+	\begin{itemize}
+	\item<1-> A \alert{rational number} $x$ is any number that can be represented as the ratio of two integers.
+	\item<2-> For example $x = \frac{22}{7}$ and $x = \frac{2009}{2010}$ are rational numbers.  
+	\item<3-> By contrast $x = \pi$ is \alert{irrational}.  \onslide<4>(See Wikipedia for a collection of various proofs.)
+	\end{itemize}
+	
+% Here, we are manually indicating when each item should appear.  For example, item 2 is set to appear on slide 2 and remain displayed until the end of the frame.  Notice how we made the last remark only appear on slide 4 of this frame.
+	
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Relatively Prime Numbers}
+
+\frame{
+	\frametitle{Definition}
+	Two integers $a$ and $b$ are said to be \alert{relatively prime} if they do not share any common factors other than $\pm 1$. \\[.5in]
+	\pause
+	For example, $a = 17$ and $b = 256$ are relatively prime, whereas $a = 15$ and $a = 24$ are not (as $3$ divides both).
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Main Result}
+
+\frame{
+	\frametitle{Infinite descent}
+	\begin{theorem}
+		$\sqrt2$ is irrational.
+	\end{theorem}
+
+	\pause
+	\begin{proof}
+		Suppose, by way of contradiction, that $\sqrt2$ is rational.\\
+		
+		\pause Then there exist relatively prime integers $a, b$ with $\sqrt{2} = \frac{a}{b}$.
+		
+		\vspace{-0.1in}
+		\[
+			\begin{array}{cl}
+			\onslide<3->
+			\implies & 2b^2 = a^2 \\
+			\onslide<4->
+			 \implies & 2 \mid a \\
+			 \onslide<5->
+			 \implies & a = 2m \quad \text{for some integer }m\\
+			 \onslide<6->
+			 \implies & b^2 = 2m^2 \\
+			\onslide<7->
+			 \implies & 2 \mid b
+			\end{array}
+		\]
+		\onslide<8>But we assumed $a, b$ were relatively prime! Contradiction!
+	\end{proof}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{References}
+
+\frame{
+\frametitle{\texttt{BEAMER} References}
+\begin{itemize}[<+->]
+\item Official documentation for the \texttt{BEAMER} class\\Available on PolyLearn and on the web
+\item Wikibooks,``LaTeX/Presentations" \url{http://en.wikibooks.org/wiki/LaTeX/Presentations}
+\item Rouben Rostamian,``A \texttt{BEAMER} Quickstart" \url{http://www.math.umbc.edu/~rouben/beamer/}
+\item Charles Batts,``A Beamer Tutorial in Beamer" \url{http://www.uncg.edu/cmp/reu/presentations/Charles\%20Batts\%20-\%20Beamer\%20Tutorial.pdf}
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Thanks!}
+A heartfelt thanks to:\pause
+\begin{itemize}[<+->]
+\item Professor Sherman. This sample \texttt{BEAMER} presentation is a modified version of a file he created for the Winter 2010 section of Math 351.
+\item The Greeks, for not drowning me.
+\end{itemize}
+}
+
+\end{document}
+

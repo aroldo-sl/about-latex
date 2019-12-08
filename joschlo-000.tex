@@ -1,0 +1,44 @@
+
+%%% joschlo-000.tex --- 
+
+%% Author: asouzaleite@gmx.de
+%% Version: $Id: joschlo-000.tex,v 0.0 2017/02/25 16:45:46 aroldo Exp$
+
+%%\revision$Header: /home/aroldo/sync/devel/about-latex/joschlo-000.tex,v 0.0 2017/02/25 16:45:46 aroldo Exp$
+
+%% Beispiele, begleitend zu Joachim Schlossers LaTeX-Buch.
+
+\documentclass[12pt,draft,a4paper]{scrartcl}
+%% scrreprt, scrbook, scrlttr2
+%%\usepackage[debugshow,final]{graphics}
+
+%%%%%<encoding>%%%%%%%%%%
+\usepackage[utf8]{inputenc} % ? this is needed for umlauts
+\usepackage[ngerman]{babel} % ? this is needed for geman syllable separation
+\usepackage[T1]{fontenc}    % ? this is needed for correct output of umlauts in pdf
+\usepackage{lmodern}        % ? what is this needed for? 
+
+%%%%%%</encoding>%%%%%%%%
+
+
+
+\begin{document}
+%%\pagestyle{headings}
+\tableofcontents
+\newpage
+\section{}
+\subsection{Subsection .1}
+
+\section{Section A}
+\subsection{Subsection A.1}
+{\huge
+
+             
+  The textual content of Subsection A1.
+}\\
+Hallo
+\newpage
+\section{Section B}
+\subsection{Subsection B.1}
+The textual content of Subsection B1.
+\end{document}

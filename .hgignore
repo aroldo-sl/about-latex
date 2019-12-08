@@ -1,0 +1,70 @@
+# Copied from  about-latex and modified 2016-12-26
+
+syntax: glob
+
+# [deleteme]
+*.Trash
+*.DELETE
+
+# [backup]
+*.bak
+
+# [archives]
+*.tar
+*.tar.gz
+*.tar.bz2
+*.zip
+*.gz
+
+# [pdflatex]
+*.pdf
+*.aux
+*.out
+*.log
+*.jpg
+*.odg
+*.nav
+*.snm
+*.toc
+*.synctex.gz
+*.vrb
+
+
+# [editors]
+*.swp
+*.elc
+*~
+*\#*\#
+
+# [python]
+*.pyc
+*.pyo
+*.bdf
+*.bak
+build/
+dist/
+
+
+# [miscellaneous]
+*.orig
+*.ori
+*.old
+*.svn
+*.rej
+*.egg-info
+*.git
+*.DELETE
+backup/
+*.log
+
+syntax: regexp
+
+# [log]
+.*\.log\.\d{1,2}$
+
+
+
+
+
+
+
