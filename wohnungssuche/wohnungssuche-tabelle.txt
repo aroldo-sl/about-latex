@@ -1,0 +1,21 @@
+.. -*- mode:rst -*-
+
+
+Wohnungssuche
+==============
+
+
+.. list-table:: Wohnungssuche
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * - heading row 1
+     - heading row 2
+     - heading row 3
+     - heading row 4
+
+   * - this
+     - that
+     - and the other
+     - and even more
