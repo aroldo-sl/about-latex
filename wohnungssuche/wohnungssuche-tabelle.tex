@@ -7,6 +7,7 @@
 \usepackage{longtable,ltcaption,array}
 \setlength{\extrarowheight}{2pt}
 \newlength{\DUtablewidth} % internal use in tables
+\usepackage{textcomp} % text symbol macros
 
 %%% Custom LaTeX preamble
 % PDF Standard Fonts
@@ -18,98 +19,43 @@
 
 %%% Fallback definitions for Docutils-specific commands
 
-% Provide a length variable and set default, if it is new
-\providecommand*{\DUprovidelength}[2]{
-  \ifthenelse{\isundefined{#1}}{\newlength{#1}\setlength{#1}{#2}}{}
-}
-
-% line block environment
-\DUprovidelength{\DUlineblockindent}{2.5em}
-\ifthenelse{\isundefined{\DUlineblock}}{
-  \newenvironment{DUlineblock}[1]{%
-    \list{}{\setlength{\partopsep}{\parskip}
-            \addtolength{\partopsep}{\baselineskip}
-            \setlength{\topsep}{0pt}
-            \setlength{\itemsep}{0.15\baselineskip}
-            \setlength{\parsep}{0pt}
-            \setlength{\leftmargin}{#1}}
-    \raggedright
-  }
-  {\endlist}
-}{}
-
 % hyperlinks:
 \ifthenelse{\isundefined{\hypersetup}}{
   \usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
   \usepackage{bookmark}
   \urlstyle{same} % normal text font (alternatives: tt, rm, sf)
 }{}
-\hypersetup{
-  pdftitle={Wohnungssuche},
-}
 
 %%% Body
+\usepackage[a4paper, landscape, margin=2cm]{geometry}
 \begin{document}
-\title{Wohnungssuche%
-  \label{wohnungssuche}}
-\author{}
-\date{}
-\maketitle
 
 % -*- mode:rst -*-
 
-\begin{DUlineblock}{0em}
-\item[] Aroldo de Souza Leite
-\item[] José Luis Quesada Bravo
-\end{DUlineblock}
 
-\setlength{\DUtablewidth}{\linewidth}%
-\begin{longtable}[l]{|p{0.191\DUtablewidth}|p{0.191\DUtablewidth}|p{0.191\DUtablewidth}|p{0.191\DUtablewidth}|p{0.191\DUtablewidth}|}
+\begin{itemize}
+\item Aroldo de Souza Leite
+
+\item José Luis Quesada Bravo
+\end{itemize}
+
+\begin{longtable}[l]{|l|l|l|l|l|l|l|l|}
 \caption{Wohnungssuche}\\
 \hline
-\textbf{%
-heading row 1
-} & \textbf{%
-heading row 2
-} & \textbf{%
-heading row 3
-} & \textbf{%
-heading row 4
-} & \textbf{%
-comments
-} \\
+\textbf{Bewerbung} & \textbf{Scout-ID} & \textbf{Zimmer} & \textbf{Wohnfläche} & \textbf{Kaltmiete} & \textbf{Adresse} & \textbf{Ergebnis} & \textbf{Kommentar} \\
 \hline
 \endfirsthead
 \caption[]{Wohnungssuche (... continued)}\\
 \hline
-\textbf{%
-heading row 1
-} & \textbf{%
-heading row 2
-} & \textbf{%
-heading row 3
-} & \textbf{%
-heading row 4
-} & \textbf{%
-comments
-} \\
+\textbf{Bewerbung} & \textbf{Scout-ID} & \textbf{Zimmer} & \textbf{Wohnfläche} & \textbf{Kaltmiete} & \textbf{Adresse} & \textbf{Ergebnis} & \textbf{Kommentar} \\
 \hline
 \endhead
-\multicolumn{5}{p{0.96\DUtablewidth}}{\raggedleft\ldots continued on next page}\\
+\multicolumn{8}{l}{\raggedleft\ldots continued on next page}\\
 \endfoot
 \endlastfoot
-
-this
- & 
-that
- & 
-and the other
- & 
-third
- & 
-This is a long one-line comment.
-There isn't a second line.
- \\
+30.07.22 & 135170803 & 2,00 & 57,00 m² & 590 kalt & Voltastraße 7, 51145 Köln, Porz (Ortsteil) & Inserat deaktiviert &  \\
+\hline
+07.08.22 & 135062815 & 2,00 & 61,00 m² & 420 kalt & 51069 Köln, Dünnwald & Inserat deakativiert &  \\
 \hline
 \end{longtable}
 

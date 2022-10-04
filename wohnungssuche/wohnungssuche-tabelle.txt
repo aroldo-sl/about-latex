@@ -1,29 +1,63 @@
 .. -*- mode:rst -*-
 
+..
+   \usepackage[a4paper, landscape, margin=2cm]{geometry}
 
-Wohnungssuche
-==============
-
-| Aroldo de Souza Leite
-| José Luis Quesada Bravo
-
+- Aroldo de Souza Leite
+- José Luis Quesada Bravo
 
 .. list-table:: Wohnungssuche
    :align: left
    :header-rows: 1
+   :widths: auto
+
+   * - Bewerbung 
+     - Scout-ID 	
+     - Zimmer
+     - Wohnfläche 	
+     - Kaltmiete 	
+     - Adresse 	
+     - Ergebnis 
+     - Kommentar
+
+   * - 30.07.22
+     - 135170803
+     - 2,00
+     - 57,00 m²
+     - 590 kalt 
+     - Voltastraße 7, 51145 Köln, Porz (Ortsteil)
+     - Inserat deaktiviert
+     -
+
+   * - 07.08.22
+     - 135062815
+     - 2,00
+     - 61,00 m²
+     - 420 kalt
+     - 51069 Köln, Dünnwald 
+     - Inserat deakativiert
+     - 
 
 
 
-   * - heading row 1
-     - heading row 2
-     - heading row 3
-     - heading row 4
-     - comments
 
-   * - this
-     - that
-     - and the other
-     - third
-     - This is a long one-line comment.
-       There isn't a second line.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
