@@ -4,8 +4,7 @@
    \usepackage[a4paper, landscape, top=2cm, margin=2cm]{geometry}
 
 
-.. |date| date:: %F
-
+.. |date| date:: %d.%m.%Y
 
 - Aroldo de Souza Leite
 - José Luis Quesada Bravo
