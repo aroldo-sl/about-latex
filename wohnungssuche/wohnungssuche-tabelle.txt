@@ -1,18 +1,25 @@
 .. -*- mode:rst -*-
 
 ..
-   \usepackage[a4paper, landscape, margin=2cm]{geometry}
+   \usepackage[a4paper, landscape, top=2cm, margin=2cm]{geometry}
+
+
+.. |date| date:: %F
+
 
 - Aroldo de Souza Leite
 - José Luis Quesada Bravo
+
+Stand: |date|
 
 .. list-table:: Wohnungssuche
    :align: left
    :header-rows: 1
    :widths: auto
 
-   * - Bewerbung 
-     - Scout-ID 	
+   * - Bewerbung
+     - Portal
+     - ID 	
      - Zimmer
      - Wohnfläche 	
      - Kaltmiete 	
@@ -21,6 +28,7 @@
      - Kommentar
 
    * - 30.07.22
+     - Immoscout24
      - 135170803
      - 2,00
      - 57,00 m²
@@ -30,6 +38,7 @@
      -
 
    * - 07.08.22
+     - Immoscout24
      - 135062815
      - 2,00
      - 61,00 m²
