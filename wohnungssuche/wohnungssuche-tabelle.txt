@@ -4,18 +4,26 @@
 Wohnungssuche
 ==============
 
+| Aroldo de Souza Leite
+| José Luis Quesada Bravo
+
 
 .. list-table:: Wohnungssuche
    :align: left
-   :widths: auto
    :header-rows: 1
+
+
 
    * - heading row 1
      - heading row 2
      - heading row 3
      - heading row 4
+     - comments
 
    * - this
      - that
      - and the other
-     - and even more
+     - third
+     - This is a long one-line comment.
+       There isn't a second line.
+

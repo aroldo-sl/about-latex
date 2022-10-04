@@ -18,6 +18,26 @@
 
 %%% Fallback definitions for Docutils-specific commands
 
+% Provide a length variable and set default, if it is new
+\providecommand*{\DUprovidelength}[2]{
+  \ifthenelse{\isundefined{#1}}{\newlength{#1}\setlength{#1}{#2}}{}
+}
+
+% line block environment
+\DUprovidelength{\DUlineblockindent}{2.5em}
+\ifthenelse{\isundefined{\DUlineblock}}{
+  \newenvironment{DUlineblock}[1]{%
+    \list{}{\setlength{\partopsep}{\parskip}
+            \addtolength{\partopsep}{\baselineskip}
+            \setlength{\topsep}{0pt}
+            \setlength{\itemsep}{0.15\baselineskip}
+            \setlength{\parsep}{0pt}
+            \setlength{\leftmargin}{#1}}
+    \raggedright
+  }
+  {\endlist}
+}{}
+
 % hyperlinks:
 \ifthenelse{\isundefined{\hypersetup}}{
   \usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
@@ -38,21 +58,58 @@
 
 % -*- mode:rst -*-
 
-\begin{longtable}[l]{|l|l|l|l|}
-\caption*{Wohnungssuche}\\
+\begin{DUlineblock}{0em}
+\item[] Aroldo de Souza Leite
+\item[] José Luis Quesada Bravo
+\end{DUlineblock}
+
+\setlength{\DUtablewidth}{\linewidth}%
+\begin{longtable}[l]{|p{0.191\DUtablewidth}|p{0.191\DUtablewidth}|p{0.191\DUtablewidth}|p{0.191\DUtablewidth}|p{0.191\DUtablewidth}|}
+\caption{Wohnungssuche}\\
 \hline
-\textbf{heading row 1} & \textbf{heading row 2} & \textbf{heading row 3} & \textbf{heading row 4} \\
+\textbf{%
+heading row 1
+} & \textbf{%
+heading row 2
+} & \textbf{%
+heading row 3
+} & \textbf{%
+heading row 4
+} & \textbf{%
+comments
+} \\
 \hline
 \endfirsthead
-\caption*[]{Wohnungssuche (... continued)}\\
+\caption[]{Wohnungssuche (... continued)}\\
 \hline
-\textbf{heading row 1} & \textbf{heading row 2} & \textbf{heading row 3} & \textbf{heading row 4} \\
+\textbf{%
+heading row 1
+} & \textbf{%
+heading row 2
+} & \textbf{%
+heading row 3
+} & \textbf{%
+heading row 4
+} & \textbf{%
+comments
+} \\
 \hline
 \endhead
-\multicolumn{4}{l}{\raggedleft\ldots continued on next page}\\
+\multicolumn{5}{p{0.96\DUtablewidth}}{\raggedleft\ldots continued on next page}\\
 \endfoot
 \endlastfoot
-this & that & and the other & and even more \\
+
+this
+ & 
+that
+ & 
+and the other
+ & 
+third
+ & 
+This is a long one-line comment.
+There isn't a second line.
+ \\
 \hline
 \end{longtable}
 
