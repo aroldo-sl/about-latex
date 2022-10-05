@@ -11,18 +11,17 @@
 
 Stand: |date|
 
-.. list-table:: Wohnungssuche
-   :align: left
+.. list-table:: Wohnungssuche (Stand: |date|)
    :header-rows: 1
-   :widths: auto
+   :align: left
 
    * - Bewerbung
      - Portal
-     - ID 	
+     - Inserat-Nr. 	
      - Zimmer
-     - Wohnfläche 	
-     - Kaltmiete 	
-     - Adresse 	
+     - m² 	
+     - Miete (€)	
+     - Stadtteil
      - Ergebnis 
      - Kommentar
 
@@ -30,20 +29,22 @@ Stand: |date|
      - Immoscout24
      - 135170803
      - 2,00
-     - 57,00 m²
+     - 57,00
      - 590 kalt 
-     - Voltastraße 7, 51145 Köln, Porz (Ortsteil)
+     - 51145 Porz
      - Inserat deaktiviert
-     -
+     - Finde ich ganz schön blöd
+       dass man mir nicht einmal
+       eine höfliche Absage zuschickt.
 
    * - 07.08.22
      - Immoscout24
      - 135062815
      - 2,00
-     - 61,00 m²
+     - 61,00
      - 420 kalt
-     - 51069 Köln, Dünnwald 
-     - Inserat deakativiert
+     - 51069 Dünnwald 
+     - Inserat deaktiviert
      - 
 
 

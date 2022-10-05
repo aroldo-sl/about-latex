@@ -16,6 +16,7 @@
 \usepackage{courier}
 
 %%% User specified packages and stylesheets
+\input{preamble.tex}
 
 %%% Fallback definitions for Docutils-specific commands
 
@@ -26,12 +27,12 @@
   \urlstyle{same} % normal text font (alternatives: tt, rm, sf)
 }{}
 
-\usepackage[a4paper, landscape, top=2cm, margin=2cm]{geometry}
 %%% Body
 \begin{document}
 
 % -*- mode:rst -*-
 
+% \usepackage[a4paper, landscape, top=2cm, margin=2cm]{geometry}
 
 \begin{itemize}
 \item Aroldo de Souza Leite
@@ -41,23 +42,96 @@
 
 Stand: 05.10.2022
 
-\begin{longtable}[l]{|l|l|l|l|l|l|l|l|l|}
-\caption{Wohnungssuche}\\
+\setlength{\DUtablewidth}{\linewidth}%
+\begin{longtable}[l]{|p{0.108\DUtablewidth}|p{0.108\DUtablewidth}|p{0.108\DUtablewidth}|p{0.108\DUtablewidth}|p{0.108\DUtablewidth}|p{0.108\DUtablewidth}|p{0.108\DUtablewidth}|p{0.108\DUtablewidth}|p{0.108\DUtablewidth}|}
+\caption{Wohnungssuche (Stand: 05.10.2022)}\\
 \hline
-\textbf{Bewerbung} & \textbf{Portal} & \textbf{ID} & \textbf{Zimmer} & \textbf{Wohnfläche} & \textbf{Kaltmiete} & \textbf{Adresse} & \textbf{Ergebnis} & \textbf{Kommentar} \\
+\textbf{%
+Bewerbung
+} & \textbf{%
+Portal
+} & \textbf{%
+Inserat-Nr.
+} & \textbf{%
+Zimmer
+} & \textbf{%
+m²
+} & \textbf{%
+Miete (€)
+} & \textbf{%
+Stadtteil
+} & \textbf{%
+Ergebnis
+} & \textbf{%
+Kommentar
+} \\
 \hline
 \endfirsthead
-\caption[]{Wohnungssuche (... continued)}\\
+\caption[]{Wohnungssuche (Stand: 05.10.2022) (... continued)}\\
 \hline
-\textbf{Bewerbung} & \textbf{Portal} & \textbf{ID} & \textbf{Zimmer} & \textbf{Wohnfläche} & \textbf{Kaltmiete} & \textbf{Adresse} & \textbf{Ergebnis} & \textbf{Kommentar} \\
+\textbf{%
+Bewerbung
+} & \textbf{%
+Portal
+} & \textbf{%
+Inserat-Nr.
+} & \textbf{%
+Zimmer
+} & \textbf{%
+m²
+} & \textbf{%
+Miete (€)
+} & \textbf{%
+Stadtteil
+} & \textbf{%
+Ergebnis
+} & \textbf{%
+Kommentar
+} \\
 \hline
 \endhead
-\multicolumn{9}{l}{\raggedleft\ldots continued on next page}\\
+\multicolumn{9}{p{0.97\DUtablewidth}}{\raggedleft\ldots continued on next page}\\
 \endfoot
 \endlastfoot
-30.07.22 & Immoscout24 & 135170803 & 2,00 & 57,00 m² & 590 kalt & Voltastraße 7, 51145 Köln, Porz (Ortsteil) & Inserat deaktiviert &  \\
+
+30.07.22
+ & 
+Immoscout24
+ & 
+135170803
+ & 
+2,00
+ & 
+57,00
+ & 
+590 kalt
+ & 
+51145 Porz
+ & 
+Inserat deaktiviert
+ & 
+Finde ich ganz schön blöd
+dass man mir nicht einmal
+eine höfliche Absage zuschickt.
+ \\
 \hline
-07.08.22 & Immoscout24 & 135062815 & 2,00 & 61,00 m² & 420 kalt & 51069 Köln, Dünnwald & Inserat deakativiert &  \\
+
+07.08.22
+ & 
+Immoscout24
+ & 
+135062815
+ & 
+2,00
+ & 
+61,00
+ & 
+420 kalt
+ & 
+51069 Dünnwald
+ & 
+Inserat deaktiviert
+ &  \\
 \hline
 \end{longtable}
 
