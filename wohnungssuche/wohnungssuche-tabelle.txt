@@ -4,16 +4,28 @@
    \usepackage[a4paper, landscape, top=2cm, margin=2cm]{geometry}
 
 
+
+
 .. |date| date:: %d.%m.%Y
+
+
+
+.. container:: custom
+
+   Wohnamt Köln
+   
+   Kramp 502/03.4
+
+
 
 - Aroldo de Souza Leite
 - José Luis Quesada Bravo
 
-Stand: |date|
 
 .. list-table:: Wohnungssuche (Stand: |date|)
    :header-rows: 1
    :align: left
+   :widths: auto
 
    * - Bewerbung
      - Portal
@@ -33,9 +45,7 @@ Stand: |date|
      - 590 kalt 
      - 51145 Porz
      - Inserat deaktiviert
-     - Finde ich ganz schön blöd
-       dass man mir nicht einmal
-       eine höfliche Absage zuschickt.
+     - keine weitere Meldung
 
    * - 07.08.22
      - Immoscout24
@@ -45,7 +55,7 @@ Stand: |date|
      - 420 kalt
      - 51069 Dünnwald 
      - Inserat deaktiviert
-     - 
+     - keine weitere Meldung
 
 
 
